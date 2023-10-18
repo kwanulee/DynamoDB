@@ -352,7 +352,9 @@
    
     }
    ```
+   
 - **handleRequest()** 메소드의 첫번째 입력 파라미터 타입이 **Thing**으로 선언되어 있고, **Thing** 클래스가 별도로 정의된 것은 Lambda 런타임이 JSON 형식의 입력 데이터를 해당되는 객체로 변환할 때 사용하기 필요하기 때문입니다.
+
 4. **src/test/java/helloworld/AppTest.java** 파일의 코드를 주석처리하여 컴파일 오류를 제거시킨다.
 
 ### 단계3: Lambda 함수의 로컬 테스트
