@@ -115,8 +115,8 @@
 1. AAWS Serverless App 프로젝트를 Jetbrains 용 AWS Toolkit을 이용하여 생성한다.
    
    - **Project name**: *DynamoDBLambdaJavaProject*
-   - **Runtime**: *java8.al2* 
-   - **SDK**:8버전의 SDK를 선택
+   - **Runtime**: *java21* 
+   - **SDK**:21버전의 SDK를 선택
 
 2. build.gradle 파일을 열고 다음 의존성을 추가하고, **변경사항을 반영**합니다.
    
@@ -265,8 +265,8 @@
 1. AAWS Serverless App 프로젝트를 Jetbrains 용 AWS Toolkit을 이용하여 생성한다.
    
    - **Project name**: *RecordingDeviceDataLambda*
-   - **Runtime**: *java8.al2* 
-   - **SDK**:8버전의 SDK를 선택
+  - **Runtime**: *java21* 
+   - **SDK**:21버전의 SDK를 선택
 
 2. build.gradle 파일을 열고 다음 의존성을 추가하고, **변경사항을 반영**합니다.
    
@@ -387,12 +387,17 @@
    ```
 
 ### 단계4: Lambda 함수의 배포
-
+- 배포할 리전(예, ap-northeast-2)을 AWS Toolkit 창에서 선택 및 확인 
 - **RecordingDeviceDataLambda** 프로젝트 탐색창에서 **template.yaml**을 찾아서 선택하고, 선택된 상태에서 오른쪽 마우스 클릭하여 **SyncServerless Application (formerly Deploy)** 메뉴를 선택
   
   - [**Confirm development stack**] 다이얼로그 화면에서 **Confirm** 선택
   
-  - [**SyncServerless Application (formerly Deploy)**] 다이얼로그 화면에서, **Create Stack**에 적절한 이름(예, *RecordingDeviceData*)을 입력 하고, **CloudFormation Capabilities:** 에서 **IAM** 체크박스를 선택한 후, **Sync** 클릭
+  - [**SyncServerless Application (formerly Deploy)**] 다이얼로그 화면에서, 
+    - **Create Stack**에 적절한 이름(예, *RecordingDeviceData*)을 입력 
+    - **S3 Bucket** 에서 기존 S3 버킷 중 하나 선택 및 새로 생성
+    - **CloudFormation Capabilities:** 에서 모든 체크박스(IAM, NamedIAM, AutoExpand, Build function inside a container)를 선택
+    - **Sync** 클릭
+   
     
     - [**참고**] 한참 동안 진행이 안되면 현재 스텝을 한번더 수행해 본다.  
   
@@ -626,8 +631,8 @@
 1. AAWS Serverless App 프로젝트를 Jetbrains 용 AWS Toolkit을 이용하여 생성한다.
    
    - **Project name**: *LoggingDataLambda*
-   - **Rumtime**:*java8*
-   - **SDK**: 8버전의 SDK를 선택 
+  - **Runtime**: *java21* 
+   - **SDK**:21버전의 SDK를 선택
 
 2. build.gradle 파일을 열고 다음 의존성을 추가하고, **변경사항을 반영**합니다.
    
@@ -818,14 +823,16 @@
    ```
 
 ### 단계4: Lambda 함수의 배포
-
+- 배포할 리전(예, ap-northeast-2)을 AWS Toolkit 창에서 선택 및 확인 
 - **RecordingDeviceDataLambda** 프로젝트 탐색창에서 **template.yaml**을 찾아서 선택하고, 선택된 상태에서 오른쪽 마우스 클릭하여 **SyncServerless Application (formerly Deploy)** 메뉴를 선택
   
   - [**Confirm development stack**] 다이얼로그 화면에서 **Confirm** 선택
   
-  - [**SyncServerless Application (formerly Deploy)**] 다이얼로그 화면에서, **Create Stack**에 적절한 이름(예, *LoggingData*)을 입력 하고, **CloudFormation Capabilities:** 에서 **IAM** 체크박스를 선택한 후, **Sync** 클릭
-    
-    - [**참고**] 한참 동안 진행이 안되면 현재 스텝을 한번더 수행해 본다.  
+  - [**SyncServerless Application (formerly Deploy)**] 다이얼로그 화면에서, 
+    - **Create Stack**에 적절한 이름(예, *LoggingData*)을 입력
+    - **S3 Bucket** 에서 기존 S3 버킷 중 하나 선택 및 새로 생성
+    - **CloudFormation Capabilities:** 에서 모든 체크박스(IAM, NamedIAM, AutoExpand, Build function inside a container)를 선택
+    - **Sync** 클릭
   
   - 콘솔 창에 다음 결과가 맨 마지막 줄에 출력되는 지를 확인
     
