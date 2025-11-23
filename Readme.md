@@ -265,7 +265,7 @@
 1. AAWS Serverless App 프로젝트를 Jetbrains 용 AWS Toolkit을 이용하여 생성한다.
    
    - **Project name**: *RecordingDeviceDataLambda*
-  - **Runtime**: *java21* 
+   - **Runtime**: *java21* 
    - **SDK**:21버전의 SDK를 선택
 
 2. build.gradle 파일을 열고 다음 의존성을 추가하고, **변경사항을 반영**합니다.
@@ -396,10 +396,7 @@
     - **Create Stack**에 적절한 이름(예, *RecordingDeviceData*)을 입력 
     - **S3 Bucket** 에서 기존 S3 버킷 중 하나 선택 및 새로 생성
     - **CloudFormation Capabilities:** 에서 모든 체크박스(IAM, NamedIAM, AutoExpand, Build function inside a container)를 선택
-    - **Sync** 클릭
-   
-    
-    - [**참고**] 한참 동안 진행이 안되면 현재 스텝을 한번더 수행해 본다.  
+    - **Sync** 클릭 
   
   - 콘솔 창에 다음 결과가 맨 마지막 줄에 출력되는 지를 확인
     
@@ -631,7 +628,7 @@
 1. AAWS Serverless App 프로젝트를 Jetbrains 용 AWS Toolkit을 이용하여 생성한다.
    
    - **Project name**: *LoggingDataLambda*
-  - **Runtime**: *java21* 
+   - **Runtime**: *java21* 
    - **SDK**:21버전의 SDK를 선택
 
 2. build.gradle 파일을 열고 다음 의존성을 추가하고, **변경사항을 반영**합니다.
