@@ -115,9 +115,8 @@
 1. AAWS Serverless App 프로젝트를 Jetbrains 용 AWS Toolkit을 이용하여 생성한다.
    
    - **Project name**: *DynamoDBLambdaJavaProject*
-   - **Runtime**: *java11*
-   - **SDK**:11버전의 SDK를 선택하거나 없으면 다운로드한 후 선택 
-   - **[주의]** Runtime과 SDK를 17로 선택하게 되면, DynamoDB 사용시 Exception이 발생하므로, 반드시 16이하의 버전을 사용해야함
+   - **Runtime**: *java8.al2* 
+   - **SDK**:8버전의 SDK를 선택
 
 2. build.gradle 파일을 열고 다음 의존성을 추가하고, **변경사항을 반영**합니다.
    
@@ -266,9 +265,8 @@
 1. AAWS Serverless App 프로젝트를 Jetbrains 용 AWS Toolkit을 이용하여 생성한다.
    
    - **Project name**: *RecordingDeviceDataLambda*
-   - **Rumtime**:*java11*
-   - **SDK**: 11버전의 SDK를 선택하거나 없으면 다운로드한 후 선택 
-	- **[주의]** Runtime과 SDK를 17로 선택하게 되면, DynamoDB 사용시 Exception이 발생하므로, 반드시 16이하의 버전을 사용해야함
+   - **Runtime**: *java8.al2* 
+   - **SDK**:8버전의 SDK를 선택
 
 2. build.gradle 파일을 열고 다음 의존성을 추가하고, **변경사항을 반영**합니다.
    
@@ -628,9 +626,8 @@
 1. AAWS Serverless App 프로젝트를 Jetbrains 용 AWS Toolkit을 이용하여 생성한다.
    
    - **Project name**: *LoggingDataLambda*
-   - **Rumtime**:*java11*
-   - **SDK**: 11버전의 SDK를 선택하거나 없으면 다운로드한 후 선택 
- - **[주의]** Runtime과 SDK를 17로 선택하게 되면, DynamoDB 사용시 Exception이 발생하므로, 반드시 16이하의 버전을 사용해야함
+   - **Rumtime**:*java8*
+   - **SDK**: 8버전의 SDK를 선택 
 
 2. build.gradle 파일을 열고 다음 의존성을 추가하고, **변경사항을 반영**합니다.
    
